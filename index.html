@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>What's going on with these arrays?</title>
+
+		<style type="text/css">
+			body * {
+				box-sizing: border-box;
+			}
+			#container {
+				width: 600px;
+				padding: 1em;
+				margin: 0 auto;
+			}
+			#run {
+				padding: 1em;
+				width: 100%;
+				margin: 1em 0;
+			}
+			#code {
+				width: 100%;
+			}
+			#output {
+				padding: 1em;
+				border: 1px solid;
+				border-radius: 0.5em;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>What's going on with these arrays?</h1>
+			<textarea id="code" rows=20>var a = [1,2,3,4,5,6];
+console.log(a[0]);
+var arr = a;
+console.log(arr[0]);
+			</textarea>
+			<div>
+				<button id="run" type="button">Run</button>
+			</div>
+			<h2>Output</h2>
+			<pre id="output"></pre>
+		</div>
+
+		<script src="bundle.js" charset="utf-8"></script>
+		<script src="thing.js" charset="utf-8"></script>
+	</body>
+</html>
